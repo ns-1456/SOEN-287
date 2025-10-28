@@ -1,0 +1,26 @@
+
+/* sign out page */
+
+.menuBar {
+    width: 20%;
+    padding: 1rem;
+}
+
+.menuBar h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    height: 70vh;
+}
+
+.container h2 {
+    font-size: 1.6rem;
+    margin: 0.5rem;
+}
+
+.Sign-Out {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+}

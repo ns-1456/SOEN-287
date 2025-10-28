@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Manage Resources</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="adminResources.css">
+</head>
+<body>
+    <div class="menuBar">
+        <h1>Admin Panel</h1><br/>
+        <a href="adminDashboard.html">
+            <button class="dashboard btn">Dashboard</button><br/>
+        </a>
+        <a href="adminResources.html">
+            <button class="resources btn">Manage Resources</button><br/>
+        </a>
+        <a href="adminBookings.html">
+            <button class="bookings btn">View Bookings</button><br/>
+        </a>
+        <a href="adminStats.html">
+            <button class="stats btn">Statistics</button><br/>
+        </a>
+        <a href="signOut.html">
+            <button class="signOut btn">Sign Out</button><br/>
+        </a>
+    </div>
+    <div class="container">
+        <h2>Resource Management</h2>
+        <p>Add, edit, or delete resources</p>
+        
+        <div class="action-section">
+            <button class="btn">Add New Resource</button>
+        </div>
+
+        <div class="resources-list">
+            <h3>Existing Resources</h3>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>Study Room A</h4>
+                    <p><strong>Type:</strong> Room</p>
+                    <p><strong>Location:</strong> Library - 2nd floor</p>
+                    <p><strong>Capacity:</strong> 6</p>
+                    <p>Quiet study room with whiteboard and table for 6 people.</p>
+                    <button class="btn">Edit</button>
+                    <button class="btn">Delete</button>
+                </div>
+                <div class="resource-card">
+                    <h4>Computer Lab 1</h4>
+                    <p><strong>Type:</strong> Lab</p>
+                    <p><strong>Location:</strong> Engineering Building - Room 101</p>
+                    <p><strong>Capacity:</strong> 20</p>
+                    <p>Windows lab with 20 workstations and IDEs installed.</p>
+                    <button class="btn">Edit</button>
+                    <button class="btn">Delete</button>
+                </div>
+                <div class="resource-card">
+                    <h4>Projector Kit</h4>
+                    <p><strong>Type:</strong> Equipment</p>
+                    <p><strong>Location:</strong> Media Services</p>
+                    <p><strong>Capacity:</strong> 1</p>
+                    <p>Portable projector kit for presentations (requires pickup).</p>
+                    <button class="btn">Edit</button>
+                    <button class="btn">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

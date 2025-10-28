@@ -1,0 +1,114 @@
+
+/* admin bookings */
+
+body {
+    display: flex;
+    gap: 0;
+}
+
+.menuBar {
+    width: 20%;
+    padding: 1rem;
+}
+
+.menuBar h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 80%;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.container h2 {
+    font-size: 1.6rem;
+    margin: 0.5rem;
+}
+
+.filters {
+    margin: 1rem 0;
+}
+
+.filters .btn {
+    margin-right: 0.5rem;
+}
+
+.bookings-list {
+    margin-top: 1rem;
+}
+
+.booking-card {
+    background: linear-gradient(135deg, #ffb3ba 0%, #c7ceea 100%);
+    border: 0.15rem solid #2d3436;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.booking-header h4 {
+    margin: 0;
+}
+
+.status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+}
+
+.status.pending {
+    background: #fff3cd;
+    border: 0.15rem solid #ffa500;
+    color: #b8860b;
+    font-weight: 600;
+}
+
+.status.approved {
+    background: #d4edda;
+    border: 0.15rem solid #28a745;
+    color: #155724;
+    font-weight: 600;
+}
+
+.status.rejected {
+    background: #f8d7da;
+    border: 0.15rem solid #dc3545;
+    color: #721c24;
+    font-weight: 600;
+}
+
+.booking-info p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.booking-actions {
+    margin-top: 0.75rem;
+}
+
+.booking-actions .btn {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .menuBar {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+

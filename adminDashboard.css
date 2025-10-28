@@ -1,0 +1,99 @@
+
+/* admin dashboard */
+
+body {
+    display: flex;
+    gap: 0;
+}
+
+.menuBar {
+    width: 20%;
+    padding: 1rem;
+}
+
+.menuBar h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 80%;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.container h2 {
+    font-size: 1.6rem;
+    margin: 0.5rem;
+}
+
+.summary-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #ffb3ba 0%, #c7ceea 100%);
+    border: 0.15rem solid #2d3436;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.recent-section {
+    margin: 1.5rem 0;
+}
+
+.booking-list {
+    margin-top: 0.5rem;
+}
+
+.booking-item {
+    border: 0.15rem solid #4ecdc4;
+    border-radius: 0.35rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #ffb3ba 0%, #ffe5b4 100%);
+}
+
+.quick-actions {
+    margin-top: 1.5rem;
+}
+
+.quick-actions h3 {
+    margin-bottom: 0.5rem;
+}
+
+.quick-actions .btn {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .menuBar {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+    .summary-stats {
+        grid-template-columns: 1fr;
+    }
+}
+

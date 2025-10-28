@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="adminDashboard.css">
+</head>
+<body>
+    <div class="menuBar">
+        <h1>Admin Panel</h1><br/>
+        <a href="adminDashboard.html">
+            <button class="dashboard btn">Dashboard</button><br/>
+        </a>
+        <a href="adminResources.html">
+            <button class="resources btn">Manage Resources</button><br/>
+        </a>
+        <a href="adminBookings.html">
+            <button class="bookings btn">View Bookings</button><br/>
+        </a>
+        <a href="adminStats.html">
+            <button class="stats btn">Statistics</button><br/>
+        </a>
+        <a href="signOut.html">
+            <button class="signOut btn">Sign Out</button><br/>
+        </a>
+    </div>
+    <div class="container">
+        <h2>Admin Dashboard</h2>
+        <p>Overview of system statistics</p>
+        
+        <div class="summary-stats">
+            <div class="stat-card">
+                <h3>Total Resources</h3>
+                <p class="stat-number">3</p>
+            </div>
+            <div class="stat-card">
+                <h3>Active Bookings</h3>
+                <p class="stat-number">12</p>
+            </div>
+            <div class="stat-card">
+                <h3>Users</h3>
+                <p class="stat-number">45</p>
+            </div>
+        </div>
+
+        <div class="recent-section">
+            <h3>Recent Bookings</h3>
+            <div class="booking-list">
+                <div class="booking-item">
+                    <div><strong>Study Room A</strong></div>
+                    <div>John Smith - Nov 15, 2024, 10:00 AM</div>
+                </div>
+                <div class="booking-item">
+                    <div><strong>Computer Lab 1</strong></div>
+                    <div>Sarah Johnson - Nov 18, 2024, 2:00 PM</div>
+                </div>
+                <div class="booking-item">
+                    <div><strong>Projector Kit</strong></div>
+                    <div>Mike Chen - Nov 20, 2024, 9:00 AM</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <h3>Quick Actions</h3>
+            <a href="adminResources.html" class="btn">Add New Resource</a>
+            <a href="adminBookings.html" class="btn">Manage Bookings</a>
+        </div>
+    </div>
+</body>
+</html>
+

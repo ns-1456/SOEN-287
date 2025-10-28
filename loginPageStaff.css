@@ -1,0 +1,100 @@
+
+/* staff login page */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0;
+  height: 70vh;
+}
+
+/* Left and Right sections*/
+.Left,
+.right {
+  flex: 1;
+  padding: 5%;
+} 
+
+/* LEFT SIDE */
+.Left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;  
+  border-right: 0.15em solid #4ecdc4;
+  background: linear-gradient(135deg, #ffb3ba 0%, #c7ceea 100%);
+}
+
+.Left h1 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+/* RIGHT SIDE */
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5% 8%;
+  grid-column: 2 / 3;
+}
+
+.right h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5%;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 0.6rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+/* Buttons */
+/* .btn from common.css covers shared button styles */
+.log-in-btn { padding: 0; }
+
+/* Bottom text and staff login */
+.bottom {
+  width: 100%;
+  text-align: bottom;
+  margin-top: 5%;
+    
+
+}
+
+.bottom h4 {
+  margin-bottom: 2%;
+  font-weight: 500;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+
+  .left {
+    border-right: none;         /* remove vertical line */
+    border-bottom: 0.2rem solid #4ecdc4; /* add horizontal line instead */
+  }
+
+  .right {
+    align-items: center;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    width: 80%;
+  }
+}

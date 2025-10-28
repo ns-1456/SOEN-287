@@ -1,0 +1,35 @@
+<!DOCTYPE html >
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <title>Create account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="createAccount.css">
+</head>
+<body>
+    <div class = "container">
+        <h1>Create Account</h1><br/>
+             <select name="UserType" size="1"  >
+                 <option selected="true"> Select user type</option>
+                <option > Student   </option>
+                <option > Staff</option>
+                <option > Admin</option>
+            </select>
+        <!-- need to add validation later -->
+        <label> 
+                Username
+                <input type = "username" name = "username"/><br/>
+                 Email
+                <input type = "email" name = "email"/> <br/>
+                 Password
+                <input type = "password" name="password" size = "30"/> <br/>
+            </label>
+             <a href="myProfile.html">
+                <button class = "create-account btn">Create Account</button>
+            </a>
+        
+    </div>
+</body>
+
+</html>

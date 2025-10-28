@@ -1,0 +1,33 @@
+
+/* my account page */
+
+.menuBar{
+    width: 20%;
+    padding: 1rem;
+}
+
+.menuBar h1{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.container{
+  height: 70vh;
+}
+
+.container h2{
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.container label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+}
+
+.container input{ max-width: 25rem; }
+
+.Modify { padding: 0; margin-left: 0.5rem; margin-top: 1rem; }

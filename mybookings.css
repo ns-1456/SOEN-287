@@ -1,0 +1,51 @@
+
+/* my bookings page */
+
+body {
+    display: flex;
+    gap: 0;
+}
+
+.menuBar {
+    width: 20%;
+    padding: 1rem;
+}
+
+.menuBar h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 80%;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.booking { 
+    border:0.15rem solid #4ecdc4; 
+    padding:0.5rem; 
+    border-radius:0.35rem; 
+    margin-bottom:0.5rem; 
+    background: linear-gradient(135deg, #ffb3ba 0%, #ffe5b4 100%); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.booking small { 
+    color:#2d3436; 
+    font-weight: 600; 
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .menuBar {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+

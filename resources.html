@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Browse Resources</title>
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="resources.css">
+</head>
+<body>
+  <div class="menuBar">
+    <h1>My Account</h1><br/>
+    <a href="myProfile.html">
+      <button class="myProfile btn">My Profile</button><br/>
+    </a>
+    <a href="mybookings.html">
+      <button class="myReservations btn">My Reservations</button><br/>
+    </a>
+    <a href="resources.html">
+      <button class="browseResources btn">Browse Resources</button><br/>
+    </a>
+    <a href="signOut.html">
+      <button class="signOut btn">Sign Out</button><br/>
+    </a>
+  </div>
+  <div class="container">
+    <h1 class="page-title">Browse Resources</h1>
+    <!-- list of available resources -->
+    <div class="resources-grid">
+      <div class="card">
+        <h3>Study Room A</h3>
+        <p><strong>Type:</strong> Room</p>
+        <p><strong>Location:</strong> Library - 2nd floor</p>
+        <p>Quiet study room with whiteboard and table for 6 people.</p>
+        <p><a href="resource.html?id=1" class="btn">View & Book</a></p>
+      </div>
+      <div class="card">
+        <h3>Computer Lab 1</h3>
+        <p><strong>Type:</strong> Lab</p>
+        <p><strong>Location:</strong> Engineering Building - Room 101</p>
+        <p>Windows lab with 20 workstations and IDEs installed.</p>
+        <p><a href="resource.html?id=2" class="btn">View & Book</a></p>
+      </div>
+      <div class="card">
+        <h3>Projector Kit</h3>
+        <p><strong>Type:</strong> Equipment</p>
+        <p><strong>Location:</strong> Media Services</p>
+        <p>Portable projector kit for presentations (requires pickup).</p>
+        <p><a href="resource.html?id=3" class="btn">View & Book</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

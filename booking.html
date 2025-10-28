@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Book Resource</title>
+  <link rel="stylesheet" href="styles/common.css">
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  <div class="menuBar">
+    <h1>My Account</h1><br/>
+    <a href="myProfile.html">
+      <button class="myProfile btn">My Profile</button><br/>
+    </a>
+    <a href="mybookings.html">
+      <button class="myReservations btn">My Reservations</button><br/>
+    </a>
+    <a href="resources.html">
+      <button class="browseResources btn">Browse Resources</button><br/>
+    </a>
+    <a href="signOut.html">
+      <button class="signOut btn">Sign Out</button><br/>
+    </a>
+  </div>
+  <div class="container">
+    <a href="resources.html" class="btn">← Back to resources</a>
+    <h1 class="page-title">Make a Booking</h1>
+    
+    <!-- resource info -->
+    <div>
+      <p><strong>Resource: Study Room A</strong></p>
+      <p>Location: Library - 2nd floor</p>
+      <p>Capacity: 6 people</p>
+    </div>
+    <h3>Enter Booking Details:</h3>
+    <form>
+      <label>
+        Start date and time
+        <input type="datetime-local" required>
+      </label>
+      <label>
+        End date and time
+        <input type="datetime-local" required>
+      </label>
+      <label>
+        Purpose
+        <input type="text" placeholder="e.g., Team meeting" required>
+      </label>
+      <label>
+        Your name
+        <input type="text" placeholder="Enter your full name" required>
+      </label>
+      <button type="submit" class="btn">Submit Booking</button>
+      <button type="button" class="btn">Cancel</button>
+    </form>
+    <div class="mt-2"></div>
+  </div>
+</body>
+</html>

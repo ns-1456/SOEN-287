@@ -1,0 +1,104 @@
+
+/* admin resources */
+
+body {
+    display: flex;
+    gap: 0;
+}
+
+.menuBar {
+    width: 20%;
+    padding: 1rem;
+}
+
+.menuBar h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 80%;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.container h2 {
+    font-size: 1.6rem;
+    margin: 0.5rem;
+}
+
+.action-section {
+    margin: 1rem 0;
+}
+
+.form-section {
+    background: linear-gradient(135deg, #ffb3ba 0%, #ffe5b4 100%);
+    border: 0.15rem solid #2d3436;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h3 {
+    margin-bottom: 0.5rem;
+}
+
+.form-section label {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+.form-section textarea {
+    resize: vertical;
+}
+
+.resources-list {
+    margin-top: 1.5rem;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.resource-card {
+    background: linear-gradient(135deg, #c7ceea 0%, #ffe5b4 100%);
+    border: 0.15rem solid #4ecdc4;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card h4 {
+    margin-bottom: 0.5rem;
+}
+
+.resource-card p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.resource-card .btn {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .menuBar {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

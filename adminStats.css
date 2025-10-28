@@ -1,0 +1,134 @@
+
+/* admin stats */
+
+body {
+    display: flex;
+    gap: 0;
+}
+
+.menuBar {
+    width: 20%;
+    padding: 1rem;
+}
+
+.menuBar h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 80%;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.container h2 {
+    font-size: 1.6rem;
+    margin: 0.5rem;
+}
+
+.stats-overview {
+    margin: 1.5rem 0;
+}
+
+.stats-overview h3 {
+    margin-bottom: 0.5rem;
+}
+
+.stat-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.stat-item {
+    background: linear-gradient(135deg, #ffb3ba 0%, #ffe5b4 100%);
+    border: 0.15rem solid #2d3436;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.usage-by-resource {
+    margin: 1.5rem 0;
+}
+
+.usage-by-resource h3 {
+    margin-bottom: 0.5rem;
+}
+
+.stats-list {
+    margin-top: 0.5rem;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #c7ceea 0%, #ffe5b4 100%);
+    border: 0.15rem solid #4ecdc4;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.usage-bar {
+    width: 100%;
+    height: 0.5rem;
+    background: #ddd;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.usage-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), #ff8ab1);
+}
+
+.peak-times {
+    margin: 1.5rem 0;
+}
+
+.peak-times h3 {
+    margin-bottom: 0.5rem;
+}
+
+.peak-list {
+    margin-top: 0.5rem;
+}
+
+.peak-item {
+    background: linear-gradient(135deg, #ffb3ba 0%, #c7ceea 100%);
+    border: 0.15rem solid #2d3436;
+    border-radius: 0.35rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.export-section {
+    margin: 1.5rem 0;
+}
+
+.export-section h3 {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .menuBar {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+    .stat-row {
+        flex-direction: column;
+    }
+}
+
